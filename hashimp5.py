@@ -1,0 +1,122 @@
+greeting = "Hello world"
+print(greeting)
+
+
+greeting = "goodbye"
+print (greeting)
+
+
+first_name = "AI" 
+last_name = "HUB"
+full_name = f"{first_name},{last_name}"
+print(full_name)
+
+
+print (f"albert eiestine once said, a person who never made a mistake never tried a new")
+
+
+name_with_spaces = "  Ali  "
+clean_name = name_with_spaces.strip()
+print (clean_name)
+
+
+number = 10
+result = (((number + 5)*2)-3)
+print(result)
+
+
+a = 10 
+b = 5
+print (f"sum: {a+b}")
+print(f"difference : {a-b}")
+print(f"product : {a*b}")
+print (f"quotient : {a/ b}")
+
+
+num = 7
+square = num ** 2
+cube = num ** 3
+print(f"The square of {num} is {square}")
+print(f"The cube of {num} is {cube}")
+
+
+num1 = 3.14
+num2 = 2.71
+num3 = 1.618
+total = num1 + num2 + num3
+print(f"The total is: {total}")
+
+
+x, y, z = 1, 2, 3
+print(x, y, z)
+
+
+favorite_fruits = ["apple", "banana", "orange", "grape", "mango"]
+for fruit in favorite_fruits:
+    print(fruit)
+
+
+favorite_fruits[1] = "strawberry"
+print(favorite_fruits)
+
+
+favorite_fruits.append("pineapple")
+favorite_fruits.insert(0, "kiwi")
+print(favorite_fruits)
+
+
+print("List before deletion:",favorite_fruits)
+del favorite_fruits[0]
+print("\nList after deleting the first item using del:",favorite_fruits)
+popped_item = favorite_fruits.pop()
+print(f"\nList after removing the last item using pop():",favorite_fruits)
+print(f"Popped item: {popped_item}")
+favorite_fruits.remove("orange")
+print("\nList after removing 'orange' using remove():")
+print(favorite_fruits)
+
+
+favorite_fruits = ["apple", "banana", "orange", "grape", "mango"]
+print("Original list:", favorite_fruits)
+favorite_fruits.sort()
+print("List after sort():", favorite_fruits)
+favorite_fruits = ["apple", "banana", "orange", "grape", "mango"]
+print("\nOriginal list again for sorted():", favorite_fruits)
+sorted_fruits = sorted(favorite_fruits)
+print("New list from sorted():", sorted_fruits)
+print("Original list after using sorted():", favorite_fruits)
+
+
+dream_destinations = ["Tokyo", "Paris", "Dubai", "New York"]
+print("Original list:", dream_destinations)
+dream_destinations.sort()
+print("Sorted alphabetically:", dream_destinations)
+dream_destinations.reverse()
+print("Reversed order:", dream_destinations)
+total_destinations = len(dream_destinations)
+print("Total number of destinations:", total_destinations)
+
+
+guest_list = []
+guest_list.append("Ali")
+guest_list.append("Moiz")
+guest_list.append("Ahmad")
+guest_list.insert(0, "Shafe")
+popped_guest = guest_list.pop()
+print("Final guest list:", guest_list)
+
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+last_three_elements = my_list[len(my_list) - 3:]
+print(last_three_elements)
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("Even numbers:")
+for number in numbers:
+  if number % 2 == 0:
+     print(number)
+
+
+squares = [n**2 for n in range(1, 11)]
+print(squares)
