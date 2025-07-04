@@ -1,0 +1,120 @@
+a = 10
+b = 3
+print(f"Addition: {a + b}")
+print(f"Subtraction: {a - b}")
+print(f"Multiplication: {a * b}")
+print(f"Division: {a / b}")
+print(f"Modulus: {a % b}")
+print(f"Exponentiation: {a ** b}")
+print(f"Floor Division: {a // b}")
+
+
+print(f"a == b: {a == b}")
+print(f"a != b: {a != b}")
+print(f"a > b: {a > b}")
+print(f"a < b: {a < b}")
+print(f"a >= b: {a >= b}")
+print(f"a <= b: {a <= b}")
+
+
+x = True
+y = False
+print(f"x and y: {x and y}")
+print(f"x or y: {x or y}")
+print(f"not x: {not x}")
+
+
+num = 5
+print(f"Initial num: {num}")
+num += 2
+print(f"num after += 2: {num}")
+num -= 1
+print(f"num after -= 1: {num}")
+num *= 3
+print(f"num after *= 3: {num}")
+num /= 2
+print(f"num after /= 2: {num}")
+num %= 3
+print(f"num after %= 3: {num}")
+num = 5 
+num **= 2
+print(f"num after **= 2: {num}")
+num = 5 
+num //= 2
+print(f"num after //= 2: {num}")
+
+
+m = 100
+n = 100
+print(f"m is n: {m is n}")
+print(f"m is not n: {m is not n}")
+
+
+text = "Python Programming"
+print(f"'Python' in text: {'Python' in text}")
+print(f"'Java' not in text: {'Java' not in text}")
+
+
+import keyword
+print("Python Keywords:")
+print(keyword.kwlist)
+
+
+name = "Ali"
+age = 20
+height = 5.9
+print(f"Value of name: {name}, Type: {type(name)}")
+print(f"Value of age: {age}, Type: {type(age)}")
+print(f"Value of height: {height}, Type: {type(height)}")
+
+
+user_name = "Ali"
+x1 = 123
+_value = 99
+TotalAmount = 500.50
+data123 = [1, 2, 3]
+
+
+_hidden = 5
+__private = 10
+MAX_SIZE = 100
+print(f"_hidden: {_hidden}")
+print(f"__private: {__private}")
+print(f"MAX_SIZE: {MAX_SIZE}")
+
+
+x, y, z = 1, 2, 3
+print(f"x: {x}, y: {y}, z: {z}")
+
+
+a = b = c = 0
+print(f"a: {a}, b: {b}, c: {c}")
+
+
+temp = 100
+print(f"temp before deletion: {temp}")
+del temp
+
+
+string1 = '''Hello'''
+print(string1)
+
+
+string2 = """This is line one.
+This is line two."""
+print(string2)
+
+
+print(f"Type of 10: {type(10)}")
+print(f"Type of 3.14: {type(3.14)}")
+print(f"Type of 'Hello': {type('Hello')}")
+print(f"Type of True: {type(True)}")
+
+
+score = 85
+print(f"score > 50 and score < 100: {score > 50 and score < 100}")
+
+
+message = "Welcome to Python"
+print(f"'Welcome' in message: {'Welcome' in message}")
+print(f"'Java' not in message: {'Java' not in message}")
