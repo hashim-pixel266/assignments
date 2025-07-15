@@ -1,0 +1,102 @@
+# 1️⃣ List to tuple with +10, type check, and value labeling
+lst1 = ["15", "25", "40"]
+new_tuple = tuple([int(x) + 10 for x in lst1])
+for val in new_tuple:
+    print(val, type(val), "-> Greater than 30" if val > 30 else "-> 30 or less")
+
+# 2️⃣ User input name, age (string), city — convert age to int, dict + tuple + voting check
+name = input("Enter name: ")
+age = int(input("Enter age: "))
+city = input("Enter city: ")
+info_dict = {"name": name, "age": age, "city": city}
+info_tuple = (name, age, city)
+print("Eligible to vote" if age >= 18 else "Not eligible to vote")
+
+# 3️⃣ Marks list to dict with Pass/Fail and type
+marks = ["55", "45", "85", "35"]
+results = {}
+for mark in marks:
+    score = int(mark)
+    results[score] = "Pass" if score >= 40 else "Fail"
+for k, v in results.items():
+    print(k, "->", v, "|", type(k), type(v))
+
+# 4️⃣ Tuple to dict with type casting and +5 to score
+tup = ("Farah", "20", "88.5")
+data = {
+    "name": tup[0],
+    "age": int(tup[1]),
+    "score": float(tup[2]) + 5
+}
+for k, v in data.items():
+    print(k, ":", v)
+
+# 5️⃣ Count names > 4 letters, name ➝ length dict, label short/medium/long
+names = ["Ana", "Sana", "Salman"]
+lengths = {}
+for name in names:
+    l = len(name)
+    label = "short" if l <= 4 else "medium" if l <= 6 else "long"
+    lengths[name] = (l, label)
+print("Names with length > 4:", sum(1 for n in names if len(n) > 4))
+for k, v in lengths.items():
+    print(k, "->", v)
+
+# 6️⃣ Input product names & prices, highlight if > 100
+products = {}
+for i in range(3):
+    prod = input("Enter product name: ")
+    price = float(input(f"Enter price of {prod}: "))
+    products[prod] = price
+for item, price in products.items():
+    tag = "🔺 Expensive" if price > 100 else "✅ Reasonable"
+    print(item, "->", price, tag)
+
+# 7️⃣ Mixed list to float, categorize above/below 250
+mixed = ["100", 200, 300.5, "400"]
+for item in mixed:
+    val = float(item)
+    label = "Above 250" if val > 250 else "Below 250"
+    print(val, "->", label)
+
+# 8️⃣ Tuple conversion and dict + student check
+tup2 = ("Ali", "25", "True")
+student = {
+    "name": tup2[0],
+    "age": int(tup2[1]),
+    "is_student": tup2[2] == "True"
+}
+for k, v in student.items():
+    print(f"{k}: {v}")
+if student["is_student"]:
+    print("He is a student")
+
+# 9️⃣ Subjects dict ➝ total, average, grading
+subjects = {"Math": "90", "English": "85"}
+total = sum(int(m) for m in subjects.values())
+avg = total / len(subjects)
+if avg >= 90:
+    grade = "A+"
+elif avg >= 80:
+    grade = "A"
+elif avg >= 70:
+    grade = "B"
+else:
+    grade = "C or below"
+print("Total:", total, "| Average:", avg, "| Grade:", grade)
+
+# 🔟 Gadget names and prices with uppercasing, total, and expensive flag
+gadgets = []
+prices = []
+for i in range(5):
+    g = input(f"Enter name of gadget #{i+1}: ")
+    if i == 2:
+        g = g.upper()
+    gadgets.append(g)
+    p = float(input(f"Enter price of {g}: "))
+    prices.append(p)
+total_price = sum(prices)
+gadgets_dict = {gadgets[i]: ("Expensive" if prices[i] > 100 else "Cheap") for i in range(5)}
+print("Total cost:", total_price)
+for k, v in gadgets_dict.items():
+    print(k, "->", v)
